@@ -5,7 +5,7 @@ function Regisztracio() {
     const [name, setName]=useState("");
     const [email, setEmail]=useState("");
     const [password, setPassword]=useState("");
-    const [password_confirmation, setPasswordConfirmation]=useState("");
+    const [password_confirmation, setPassword_confirmation]=useState("");
     const {regisztracio_fv}=useContext(AuthContext)
 
     function handleSubmit(e){
@@ -43,7 +43,7 @@ function Regisztracio() {
         </div>
         <div className="mb-3 mt-3">
           <label htmlFor="password" className="form-label">Jelszó újra</label>
-          <input type="password" className="form-control" id="password" placeholder="Jelszó" value={password} onChange={(e)=>{setPassword(e.target.value)}}>
+          <input type="password" className="form-control" id="password" placeholder="Jelszó" value={password_confirmation} onChange={(e)=>{setPassword_confirmation(e.target.value)}}>
          </input>
         </div>
         <button type="submit" class="btn btn-primary">Regisztrálok</button>

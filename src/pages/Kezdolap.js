@@ -6,8 +6,8 @@ function Kezdolap() {
     console.log(user)
   return (
     <div>
-        Kezdolap
-        {user}
+        <p>Kezdolap</p>
+        <p>{user ? user.name : "Nincs bejelentkezett felhasználó"}</p>
     </div>
   )
 }
